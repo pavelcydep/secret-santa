@@ -27,3 +27,6 @@ php artisan migrate:fresh --seed
  ### App\Models\Santa::factory(10)->create();
 ## Запуск проекта:
 php artisan serve
+
+==================
+## GET-запрос вернет json информацию о подопечном и о самом участнике:  /santa/ID
