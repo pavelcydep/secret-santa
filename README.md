@@ -10,20 +10,20 @@
 
 "Тайный Санта", он же Secret Santa, - анонимный способ дарить подарки. Идея проста: в большой компании каждому достаётся один "подопечный",
 которому нужно придумать подарок. Сам даритель при этом остаётся тем самым "тайным Сантой".
-====================================================
+
 
 Как установить проект?
 ================
 ## Для начала работы вам необходимо:
 скопировать проект:
-git clone 
+git clone https://github.com/pavelcydep/secret-santa.git
 
 ## Далее следует выполнить следующюю команду:
 php artisan migrate:fresh --seed
 
 ## Добавление тестовых данных в таблицу Users:
-php artisan tinker
- App\Models\Ward::factory(10)->create();
- App\Models\Santa::factory(10)->create();
+### php artisan tinker
+ ### App\Models\Ward::factory(10)->create();
+ ### App\Models\Santa::factory(10)->create();
 ## Запуск проекта:
 php artisan serve
